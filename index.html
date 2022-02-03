@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hello, World!</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        font-size: 18px;
+        height: 100%;
+      }
+      body {
+        background-color: #eaeaea;
+        height: 100%;
+      }
+      body > .container {
+        background-color: white;
+        padding-bottom: 2rem;
+        min-height: 100%;
+      }
+      .context {
+        font-size: 12px;
+        color: lightgray;
+        margin-bottom: 10px;
+      }
+      .output {
+        margin-bottom: 40px;
+      }
+      .jumbotron {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+        background-color: #68bbe5;
+        border-bottom: 5px dashed #fdf100;
+        border-radius: 0;
+      }
+      a {
+        color: white;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: white;
+        text-decoration: none;
+      }
+      select {
+        border: none;
+        background-color: #fdf100;
+        margin-right: 0.2em;
+        margin-left: 0.2em;
+      }
+      button {
+        background-color: #06697a;
+        color: white;
+        border: none;
+        transform: rotate(-3deg);
+      }
+      button:hover {
+        background-color: #68bbe5;
+        transform: rotate(3deg);
+      }
+      .display-4 {
+        font-weight: 500;
+      }
+      img {
+        border: 5px solid white;
+      }
+      select {
+        transform: rotate(2deg);
+      }
+      select:hover {
+        transform: rotate(-2deg);
+      }
+      .jumbotron img {
+        /* margin-top: -40px */
+      }
+    </style>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/sse.js@0.5.0/lib/sse.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h1 class="display-4">Tr.AI.n Guy</h1>
+                <p class="lead">Just for the rofls ...</p>
+              </div>
+              <div class="col-sm">
+                <img src="bob.jpeg" class="img-fluid" alt="Responsive image" />
+              </div>
+            </div>
+          </div>
+          <hr class="my-4" />
+          Yeah, Yeah, I know. Tr.AI.n Guy is a AI powered bot that mimics Bob
+          Mortimer's infamous
+          <a
+            href="https://twitter.com/realbobmortimer/status/1370403884246691841"
+            >Train Guy</a
+          >. It's absolutely Hilario. We popped our heads into the brainstorming
+          module, sprinkled some GPT-3 goodness into the mic, and out this thing
+          popped. Just create a simple prompt, sit back and watch the bot
+          generate a Train Guy script. You are, as ever, a pensive robot. Ciao,
+          and bella expando. See ya Col ...
+        </div>
+      </div>
+      <div class="row" id="app">
+        <div class="col-sm">
+          <train-guy></train-guy>
+        </div>
+      </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
